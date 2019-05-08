@@ -34,36 +34,131 @@
     <main class="page-main">
 
       <section class="facts">
-
+        <h2 class="facts__header visually-hidden"></h2>
+        <ul class="facts__list">
+          <li class="facts__item">
+            4 четвёртая планета по удалённости от Солнца
+          </li>
+          <li class="facts__item">
+            7 седьмая по размерам планета Солнечной системы
+          </li>
+          <li class="facts__item">
+            10,7% массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)
+          </li>
+          <li class="facts__item">
+            2 спутника вместо Луны (как картошка, только больше)
+          </li>
+          <li class="facts__item">
+            21 км высота самой высокой горы Марса.
+          </li>
+          <li class="facts__item">
+            +20 максимальная температура на поверхности
+          </li>
+        </ul>
       </section>
 
       <section class="remember">
+        <h2 class="remember__header">Марс. Вспомнить всё</h2>
+        <h3 class="remember__subheader"></h3>
 
+        <dl class="remember__info">
+          <div class="remember__info-wrapper">
+            <dt>Что такое Марс?</dt>
+            <dd>
+              <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+              <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+            </dd>
+          </div>
+
+          <div class="remember__info-wrapper">
+            <dt>Где это? Как туда доехать?</dt>
+            <dd>
+              <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+            </dd>
+          </div>
+        </dl>
       </section>
 
       <section class="idea">
+        <h2 class="idea__header">От идеи до реализации</h2>
 
+        <h3 class="idea__subheader">Илон Маск. Гений или безумец?</h3>
+
+        <img src="img/elon-musk-photo-tablet.jpg" alt="Фото Илона Маска">
+
+          <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
+
+          <blockquote class="idea__quote">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</blockquote>
+
+          <p>— заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
+
+          <p>Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
+
+          <section class="cost">
+            <h3 class="idea__subheader">Стоимость перелёта</h3>
+
+            <p>Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит 500 000 долларов на человека.</p>
+
+            <p>$500 k и ты на Марсе</p>
+            <a class="button" href="#">Я готов лететь</a>
+          </section>
       </section>
 
+
+
       <section class="underwater-rocks">
+
+        <h2 class="underwater-rocks__header">Подводные камни в масштабах космоса</h2>
+
+
+          <img class="underwater-rocks__video" src="img/video.png" alt="Видео расположения города на Марсе">
+          <button class="underwater-rocks__play-btn" type="button">Смотреть видео</button>
+
+         <!-- аккордеон с вопросами -->
 
       </section>
 
       <section class="life">
 
+        <h2 class="life__header">Организация жизни в колонии</h2>
+
+        <!-- аккордеон с вопросами по организации жизни в колонии -->
+
+        <!-- элемент списка -->
+        <img class="life__image" src="img/1.png" alt="Фото жилого помещения в колонии">
+        <h3 class="life__item-header">Проживание</h3>
+        <div class="life__item-description">
+          <p>В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+          </p>
+        </div>
+        <a class="button" href="#">Подробнее</a>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <section class="departure">
-        <h2 class="departure__header"></h2>
+        <h2 class="departure__header">Деньги приготовил. Когда вылетаем?</h2>
         <div class="departure__wrapper">
           <aside class="newsletter">
-
+            <h3 class="newsletter__header">Будь в курсе новостей</h3>
+            <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="newsletter__input">
+                <label for="nl-name">Имя</label>
+                <input class="newsletter__text-field" id="nl-name" type="text" name="name" placeholder="Имя">
+              </p>
+              <p class="newsletter__input">
+                <label for="nl-email">E-mail</label>
+                <input class="newsletter__text-field" id="nl-email" type="text" name="email" placeholder="E-mail">
+              </p>
+              <input class="button" type="submit" value="Подписаться">
+            </form>
           </aside>
           <div class="departure__description">
-
+            <p>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+            <p>Для всех желающих открыты курсы подготовки.</p>
+            <p>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
+            <p><a href="#">Критерии отбора</a></p>
           </div>
         </div>
       </section>
@@ -73,30 +168,37 @@
 
         </a>
 
-        <p class="page-footer__info-link"></p>
+        <p class="page-footer__info">
+
+          <a class="page-footer__info-link" href="#">Подробнее о проекте</a>
+        </p>
 
         <div class="page-footer__social-links social-links">
-          <p class="social-links__text"></p>
+          <p class="social-links__text">Следуйте за нами</p>
           <ul class="social-links__list">
             <li class="social-links__item">
-              <a href="#"></a>
+              <a href="#">
+                <!-- svg -->
+              </a>
             </li>
             <li class="social-links__item">
-              <a href="#"></a>
+              <a href="#">
+                <!-- svg -->
+              </a>
             </li>
             <li class="social-links__item">
-              <a href="#"></a>
+              <a href="#">
+                <!-- svg -->
+              </a>
             </li>
             <li class="social-links__item">
-              <a href="#"></a>
+              <a href="#">
+                <!-- svg -->
+              </a>
             </li>
           </ul>
         </div>
       </div>
-
-      
     </footer>
-
-
   </body>
 </html>
