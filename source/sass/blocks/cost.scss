@@ -20,3 +20,9 @@
   line-height: 24px;
   font-weight: 100;
 }
+
+@media (min-width: $tablet-width) {
+  .cost__photo {
+    float: left;
+  }
+}

@@ -20,3 +20,9 @@
 .newsletter__text-field::placeholder {
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .newsletter {
+    width: 345px;
+  }
+}

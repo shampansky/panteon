@@ -24,9 +24,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .idea__wrapper {
+    width: $tablet-width;
+  }
+
   .idea__header {
     font-size: 48px;
     line-height: 54px;
+  }
+
+  .idea__photo {
+    float: right;
   }
 }
 

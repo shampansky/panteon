@@ -27,6 +27,21 @@
 
 
 @media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: $tablet-width;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    order: 0;
+  }
+
+  .page-footer__social-links {
+    order: 0;
+  }
+
   .page-footer__info-link {
     font-size: 16px;
   }

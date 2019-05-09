@@ -33,6 +33,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .facts__wrapper {
+    width: $tablet-width;
+  }
+
   .facts__highlight {
     font-size: 48px;
     line-height: 48px;
