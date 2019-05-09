@@ -1,0 +1,32 @@
+.underwater-rocks {
+  color: #ffffff;
+  background-color: #19153f;
+}
+
+.underwater-rocks__header {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.underwater-rocks__header br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .underwater-rocks__header {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .underwater-rocks__header br {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .underwater-rocks__header {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}

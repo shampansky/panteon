@@ -1,0 +1,12 @@
+.social-links__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-links__text {
+    display: block;
+
+    font-size: 14px;
+    font-weight: normal;
+  }
+}

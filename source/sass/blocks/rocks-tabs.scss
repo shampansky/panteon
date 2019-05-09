@@ -1,0 +1,36 @@
+.rocks-tabs__tab-name {
+  font-family: $font-secondary;
+  font-weight: normal;
+  color: #908bb1
+}
+
+.rocks-tabs__tab-name--active {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .rocks-tabs__header {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rocks-tabs__header {
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+}

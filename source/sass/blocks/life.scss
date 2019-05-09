@@ -1,0 +1,20 @@
+.life__header {
+  font-size: 36px;
+  line-height: 44px;
+  color: #e12457;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .life__header {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .life__header {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}

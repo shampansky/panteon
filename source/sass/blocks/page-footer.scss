@@ -1,0 +1,18 @@
+.page-footer {
+  background-color: #76258f;
+  color: #ffffff;
+}
+
+.page-footer__info-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__info-link {
+    font-size: 16px;
+  }
+}

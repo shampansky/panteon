@@ -1,0 +1,22 @@
+.video-location__caption {
+  font-size: 14px;
+  color: #ffcfdf;
+}
+
+.video-location__play-btn span {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .video-location__play-btn {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .video-location__play-btn span {
+    display: inline;
+  }
+}
