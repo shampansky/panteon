@@ -3,6 +3,12 @@
   background-color: #19153f;
 }
 
+.underwater-rocks__wrapper {
+  width: $mobile-width;
+  padding: $content-padding;
+  margin: 0 auto;
+}
+
 .underwater-rocks__header {
   font-size: 36px;
   line-height: 44px;

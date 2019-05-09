@@ -7,88 +7,96 @@
     <title>Пантеон</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__top-bar">
-        <a class="page-header__logo logo" href="#">
-          <span class="logo__project-name">Pantheon</span> project
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span>Меню</span>
-        </button>
-        <nav class="page-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Организация жизни</a></li>
-            <li><a href="#">Подробнее о проекте</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+      <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__top-bar">
+          <a class="page-header__logo logo" href="#">
+            <img class="logo__image" src="img/logo.svg" alt="Лого проекта Пантеон">
+            <p class="logo__caption"><span class="logo__project-name">Pantheon</span> project</p>
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span>Меню</span>
+          </button>
+          <nav class="page-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Организация жизни</a></li>
+              <li><a href="#">Подробнее о проекте</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <h1 class="page-header__title">
+          <span>Пункт назначения:</span> <span>Пантеон,</span> <span>Марс</span>
+        </h1>
+
+        <figure class="video-location">
+          <img class="video-location__image" src="img/video-mobile.png" alt="Видео расположения города на Марсе">
+          <figcaption class="video-location__caption">Первый город на планете Марс недалеко от горы Олимп</figcaption>
+          <button class="video-location__play-btn" type="button"><span>Смотреть видео</span></button>
+        </figure>
       </div>
-
-      <h1 class="page-header__title">
-        <span>Пункт назначения:</span> <span>Пантеон,</span> <span>Марс</span>
-      </h1>
-
-      <figure class="video-location">
-        <img class="video-location__image" src="img/video-mobile.png" alt="Видео расположения города на Марсе">
-        <figcaption class="video-location__caption">Первый город на планете Марс недалеко от горы Олимп</figcaption>
-        <button class="video-location__play-btn" type="button"><span>Смотреть видео</span></button>
-      </figure>
     </header>
 
     <main class="page-main">
 
       <section class="facts">
-        <h2 class="facts__header visually-hidden"></h2>
-        <ul class="facts__list">
-          <li class="facts__item">
-            <span class="facts__highlight">4</span> четвёртая планета по удалённости от Солнца
-          </li>
-          <li class="facts__item">
-            <span class="facts__highlight">7</span> седьмая по размерам планета Солнечной системы
-          </li>
-          <li class="facts__item">
-            <span class="facts__highlight">10,7%</span> массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)
-          </li>
-          <li class="facts__item">
-            <span class="facts__highlight">2</span> спутника вместо Луны (как картошка, только больше)
-          </li>
-          <li class="facts__item">
-            <span class="facts__highlight">21 км</span> высота самой высокой горы Марса.
-          </li>
-          <li class="facts__item">
-            <span class="facts__highlight">+20</span> максимальная температура на поверхности
-          </li>
-        </ul>
+        <div class="facts__wrapper">
+          <h2 class="facts__header visually-hidden"></h2>
+          <ul class="facts__list">
+            <li class="facts__item">
+              <span class="facts__highlight">4</span> четвёртая планета по удалённости от Солнца
+            </li>
+            <li class="facts__item">
+              <span class="facts__highlight">7</span> седьмая по размерам планета Солнечной системы
+            </li>
+            <li class="facts__item">
+              <span class="facts__highlight">10,7%</span> массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)
+            </li>
+            <li class="facts__item">
+              <span class="facts__highlight">2</span> спутника вместо Луны (как картошка, только больше)
+            </li>
+            <li class="facts__item">
+              <span class="facts__highlight">21 км</span> высота самой высокой горы Марса.
+            </li>
+            <li class="facts__item">
+              <span class="facts__highlight">+20</span> максимальная температура на поверхности
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="remember">
-        <h2 class="remember__header">Марс.<br> Вспомнить всё</h2>
+        <div class="remember__wrapper">
+          <h2 class="remember__header">Марс.<br> Вспомнить всё</h2>
 
-        <dl class="remember__info">
-          <div class="remember__info-wrapper">
-            <h3 class="remember__subheader">Что такое Марс?</h3>
+          <dl class="remember__info">
+            <div class="remember__info-wrapper">
+              <h3 class="remember__subheader">Что такое Марс?</h3>
 
-              <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-              <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+                <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+                <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
 
-          </div>
+            </div>
 
-          <div class="remember__info-wrapper">
-            <h3 class="remember__subheader">Где это? Как туда доехать?</h3>
+            <div class="remember__info-wrapper">
+              <h3 class="remember__subheader">Где это? Как туда доехать?</h3>
 
-              <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+                <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
 
-          </div>
-        </dl>
+            </div>
+          </dl>
+        </div>
       </section>
 
       <section class="idea">
-        <h2 class="idea__header">От идеи до реализации</h2>
+        <div class="idea__wrapper">
+          <h2 class="idea__header">От идеи до реализации</h2>
 
-        <h3 class="idea__subheader">Илон Маск. Гений или безумец?</h3>
+          <h3 class="idea__subheader">Илон Маск. Гений или безумец?</h3>
 
-        <img src="img/elon-musk-photo-tablet.jpg" alt="Фото Илона Маска">
+          <img src="img/elon-musk-photo-tablet.jpg" alt="Фото Илона Маска">
 
           <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
 
@@ -106,15 +114,15 @@
             <p><span class="cost__price">$500 k</span><span class="cost__price-caption"> и ты на Марсе</span></p>
             <button class="button button--light">Я готов лететь</button>
           </section>
+        </div>
       </section>
 
 
 
       <section class="underwater-rocks">
 
-        <h2 class="underwater-rocks__header">Подводные камни<br> в масштабах космоса</h2>
-
-
+        <div class="underwater-rocks__wrapper">
+          <h2 class="underwater-rocks__header">Подводные камни<br> в масштабах космоса</h2>
           <img class="underwater-rocks__video" src="img/underwater-rocks-video-mobile.png" alt="Видео расположения города на Марсе">
           <button class="underwater-rocks__play-btn" type="button"><span class="visually-hidden">Смотреть видео</span></button>
 
@@ -163,32 +171,35 @@
               </article>
             </section>
 
-         </div>
+                 </div>
+        </div>
 
       </section>
 
       <section class="life">
 
-        <h2 class="life__header">Организация жизни в колонии</h2>
+        <div class="life__wrapper">
+          <h2 class="life__header">Организация жизни в колонии</h2>
 
-        <!-- аккордеон с вопросами по организации жизни в колонии -->
+          <!-- аккордеон с вопросами по организации жизни в колонии -->
 
-        <!-- элемент списка -->
-        <!-- <img class="life__image" src="img/1.png" alt="Фото жилого помещения в колонии">
-        <h3 class="life__item-header">Проживание</h3>
-        <div class="life__item-description">
-          <p>В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
-          </p>
+          <!-- элемент списка -->
+          <!-- <img class="life__image" src="img/1.png" alt="Фото жилого помещения в колонии">
+          <h3 class="life__item-header">Проживание</h3>
+          <div class="life__item-description">
+            <p>В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            </p>
+          </div>
+          <a class="button" href="#">Подробнее</a> -->
         </div>
-        <a class="button" href="#">Подробнее</a> -->
       </section>
 
     </main>
 
     <footer class="page-footer">
       <section class="departure">
-        <h2 class="departure__header">Деньги приготовил. Когда вылетаем?</h2>
         <div class="departure__wrapper">
+          <h2 class="departure__header">Деньги приготовил. Когда вылетаем?</h2>
           <aside class="newsletter">
             <h3 class="newsletter__header">Будь в курсе новостей</h3>
             <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
@@ -213,7 +224,7 @@
       </section>
 
       <div class="page-footer__wrapper">
-        <a class="logo logo--white" href="#">
+        <a class="page-footer__logo logo logo--white" href="#">
           <span class="logo__project-name">Pantheon</span> project
         </a>
 
@@ -253,5 +264,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>

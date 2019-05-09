@@ -4,6 +4,12 @@
   font-weight: bold;
 }
 
+.departure__wrapper {
+  width: $mobile-width;
+  padding: $content-padding;
+  margin: 0 auto;
+}
+
 .departure__link {
   font-weight: normal;
 }

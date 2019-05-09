@@ -1,6 +1,28 @@
+.facts {
+  background-color: #fff5f8;
+}
+
+.facts__wrapper {
+  width: $mobile-width;
+  padding: $content-padding;
+  margin: 0 auto;
+}
+
+.facts__list {
+  @include reset-list-style;
+
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
 .facts__item {
+  width: 150px;
+  display: inline-flex;
+  flex-direction: column;
+
   font-size: 13px;
   line-height: 18px;
+  white-space: normal;
 }
 
 .facts__highlight {
