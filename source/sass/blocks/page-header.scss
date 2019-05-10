@@ -37,9 +37,16 @@
 }
 
 .page-header__toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
   width: 47px;
   height: 18px;
-  background-color: #ffffff;
+  background-color: transparent;
+}
+
+.page-header__toggle svg {
+  fill: #ffffff;
 }
 
 .page-header__toggle span {
@@ -92,7 +99,7 @@
 
   .page-header__title {
     width: 585px;
-    
+
     font-size: 37px;
     line-height: 37px;
   }
