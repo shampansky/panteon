@@ -47,6 +47,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .remember__wrapper {
+    width: $desktop-width;
+  }
+
   .remember__header {
     font-size: 60px;
     line-height: 68px;

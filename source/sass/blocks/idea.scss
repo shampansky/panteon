@@ -39,6 +39,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .idea__wrapper {
+    width: $desktop-width;
+  }
+
   .idea__header {
     font-size: 60px;
     line-height: 68px;

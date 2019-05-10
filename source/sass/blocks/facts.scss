@@ -42,3 +42,14 @@
     line-height: 48px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .facts__wrapper {
+    width: $desktop-width;
+  }
+
+  .facts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

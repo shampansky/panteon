@@ -36,6 +36,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .departure__wrapper {
+    width: $desktop-width;
+  }
+
   .departure__header {
     font-size: 60px;
     line-height: 68px;

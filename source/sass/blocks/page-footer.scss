@@ -46,3 +46,9 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+  }
+}

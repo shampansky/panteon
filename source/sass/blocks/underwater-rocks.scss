@@ -35,6 +35,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .underwater-rocks__wrapper {
+    width: $desktop-width;
+  }
+
   .underwater-rocks__header {
     font-size: 60px;
     line-height: 68px;

@@ -23,6 +23,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .life__wrapper {
+    width: $desktop-width;
+  }
+
   .life__header {
     font-size: 60px;
     line-height: 68px;
