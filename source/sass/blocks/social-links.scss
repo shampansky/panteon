@@ -1,3 +1,22 @@
+.social-links__list {
+  @include reset-list-style;
+  margin: 0;
+  margin-bottom: 33px;
+  display: flex;
+}
+
+.social-links__item {
+  margin: 0 5px;
+}
+
+.social-links__item a {
+  display: block;
+}
+
+.social-links__item svg {
+  display: block;
+}
+
 .social-links__text {
   display: none;
 }

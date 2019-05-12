@@ -1,17 +1,44 @@
 .departure__header {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: $content-padding;
+
   font-size: 36px;
   line-height: 44px;
   font-weight: bold;
+  letter-spacing: -0.2px;
 }
 
 .departure__wrapper {
   width: $mobile-width;
-  padding: $content-padding;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #76258f;
+  background-image: url(../img/launch-bg-mobile.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.departure__newsletter {
+  padding: $content-padding;
+  order: 1;
+}
+
+.departure__description {
+  padding: $content-padding;
+  padding-bottom: 22px;
+}
+
+.departure__description p {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .departure__link {
   font-weight: normal;
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {

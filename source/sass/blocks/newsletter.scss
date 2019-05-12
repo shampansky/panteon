@@ -1,19 +1,44 @@
 .newsletter {
+  padding: 55px 32px 68px;
+
   background-color: #452c61;
+  background-image: url(../img/newsletter-bg-mobile.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .newsletter__header {
+  margin: 0;
+  margin-bottom: 27px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.newsletter__input {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.newsletter__input:last-of-type {
+
+  margin-bottom: 55px;
 }
 
 .newsletter__text-field {
+  width: 100%;
+  padding: 8px;
+
   font-family: $font-primary;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+
+  border: none;
+  border-bottom: 1px solid #ffffff;
   background-color: transparent;
 }
 

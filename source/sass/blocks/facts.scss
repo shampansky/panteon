@@ -5,18 +5,26 @@
 .facts__wrapper {
   width: $mobile-width;
   padding: $content-padding;
+
   margin: 0 auto;
 }
 
 .facts__list {
   @include reset-list-style;
+  padding-top: 36px;
+  padding-bottom: 32px;
+  margin: 0;
 
   white-space: nowrap;
   overflow-x: scroll;
 }
 
 .facts__item {
-  width: 150px;
+  position: relative;
+
+  width: 222px;
+  min-height: 90px;
+  padding: 0 35px;
   display: inline-flex;
   flex-direction: column;
 
@@ -25,7 +33,38 @@
   white-space: normal;
 }
 
+.facts__item::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  width: 1px;
+  height: 49px;
+
+  background-color: rgba(225, 36, 87, 1);
+  transform: translateY(-50%);
+}
+
+.facts__item:first-child {
+  width: 153px;
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.facts__item:last-child {
+  width: 135px;
+  padding-right: 0;
+}
+
+.facts__item:last-child::after {
+  display: none;
+}
+
 .facts__highlight {
+  margin-bottom: 13px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;

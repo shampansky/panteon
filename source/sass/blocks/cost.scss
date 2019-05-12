@@ -1,24 +1,62 @@
 .cost {
+  padding-top: 145px;
+
   color: #ffffff;
+}
+
+.cost__wrapper {
+  width: $mobile-width;
+  padding: $content-padding;
+  padding-bottom: 54px;
+  margin: 0 auto;
+
   background-color: #a62f75;
+  background-image: url(../img/idea-bg-mobile.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.cost__photo {
+  margin-top: -145px;
+  margin-bottom: 30px;
 }
 
 .cost__header {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
 }
 
+.cost__info {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.cost__price-wrapper {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
 .cost__price {
+  display: block;
+  margin-bottom: 23px;
+
   font-size: 60px;
   line-height: 60px;
   font-weight: 100;
 }
 
 .cost__price-caption {
+  padding-bottom: 3px;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 100;
+
+  border-bottom: 1px solid #ffffff;
 }
 
 @media (min-width: $tablet-width) {

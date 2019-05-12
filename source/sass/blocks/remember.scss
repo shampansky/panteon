@@ -1,4 +1,24 @@
+.remember {
+  padding-top: 40px;
+  padding-bottom: 182px;
+  margin-bottom: 50px;
+
+  background-image: url(../img/remember-all-bg-mobile@1x.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .remember {
+  background-image: url(../img/remember-all-bg-mobile@2x.png);
+  background-size: 750px auto;
+  }
+}
+
 .remember__header {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 36px;
   line-height: 44px;
   color: #e12457;
@@ -12,13 +32,23 @@
 }
 
 .remember__subheader {
+  margin: 0;
+  margin-bottom: 24px;
+
   font-size: 24px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
 }
 
+.remember__info-wrapper {
+  margin-bottom: 42px;
+}
+
 .remember p {
+  margin: 0;
+  margin-bottom: 12px;
+
   font-size: 14px;
 }
 

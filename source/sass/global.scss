@@ -41,14 +41,24 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  padding: 16px 40px;
+
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
   color: #ffffff;
   background-color: #e12457;
+
+  border: none;
+  border-radius: 999px;
 }
 
 .button--light {
+  width: 100%;
+  
   font-size: 18px;
   color: #c2529a;
+
   background-color: #ffffff;
+  box-shadow: 0 0 20px 10px rgba(255,255,255,0.6);
 }

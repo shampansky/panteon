@@ -14,7 +14,8 @@
       <div class="page-header__wrapper">
         <div class="page-header__top-bar">
           <a class="page-header__logo logo" href="#">
-            <img class="logo__image" src="img/logo.svg" alt="Лого проекта Пантеон">
+            <img class="logo__image" src="img/logo.svg" width="40" height="40" alt="Лого проекта Пантеон">
+
             <p class="logo__caption"><span class="logo__project-name">Pantheon</span> project</p>
           </a>
           <button class="page-header__toggle" type="button">
@@ -38,9 +39,18 @@
         </h1>
 
         <figure class="video-location">
-          <img class="video-location__image" src="img/video-mobile.png" alt="Видео расположения города на Марсе">
-          <figcaption class="video-location__caption">Первый город на планете Марс недалеко от горы Олимп</figcaption>
-          <button class="video-location__play-btn" type="button"><span>Смотреть видео</span></button>
+          <picture>
+            <source media="(min-width: 1170px)" srcset="img/video-desktop.png">
+            <source media="(min-width: 750px)" srcset="img/video-tablet.png">
+            <img class="video-location__image" src="img/video-mobile.png" alt="Видео расположения города на Марсе">
+          </picture>
+          <figcaption class="video-location__caption">Первый город<br> на планете Марс недалеко от горы Олимп</figcaption>
+          <button class="video-location__play-btn" type="button">
+            <svg width="52" height="52">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+            <span>Смотреть видео</span>
+          </button>
         </figure>
       </div>
     </header>
@@ -73,65 +83,89 @@
         </div>
       </section>
 
-      <section class="remember">
-        <div class="remember__wrapper">
-          <h2 class="remember__header">Марс.<br> Вспомнить всё</h2>
+      <div class="sections-wrapper">
+        <section class="remember">
+          <div class="remember__wrapper">
+            <h2 class="remember__header">Марс.<br> Вспомнить всё</h2>
 
-          <div class="remember__info">
-            <div class="remember__info-wrapper">
-              <h3 class="remember__subheader">Что такое Марс?</h3>
+            <div class="remember__info">
+              <div class="remember__info-wrapper">
+                <h3 class="remember__subheader">Что такое Марс?</h3>
 
-                <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-                <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+                  <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+                  <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
 
+              </div>
+
+              <div class="remember__info-wrapper">
+                <h3 class="remember__subheader">Где это? Как туда доехать?</h3>
+
+                  <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="idea">
+          <div class="idea__wrapper">
+            <h2 class="idea__header">От идеи до реализации</h2>
+
+            <h3 class="idea__subheader">Илон Маск. Гений или безумец?</h3>
+
+            <div class="idea__content">
+              <div class="idea__photo-wrapper">
+                <picture >
+                  <source media="(min-width: 1170px)" srcset="img/elon-musk-photo-desktop.jpg">
+                  <source media="(min-width: 750px)" srcset="img/elon-musk-photo-tablet.jpg">
+                  <img class="idea__photo" src="img/elon-musk-photo-mobile.jpg" alt="Фото Илона Маска">
+                </picture>
+              </div>
+              <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
+
+              <blockquote class="idea__quote">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</blockquote>
+
+              <p>— заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
+
+              <p>Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
             </div>
+          </div>
+        </section>
 
-            <div class="remember__info-wrapper">
-              <h3 class="remember__subheader">Где это? Как туда доехать?</h3>
 
-                <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+      <section class="cost">
+        <div class="cost__wrapper">
+          <img class="cost__photo" src="img/rocket.jpg" alt="фото ракеты">
+          <h3 class="cost__header">Стоимость перелёта</h3>
 
-            </div>
-          </dl>
+          <p class="cost__info">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.</p>
+
+          <p class="cost__price-wrapper"><span class="cost__price">$500 k</span><span class="cost__price-caption"> и ты на Марсе</span></p>
+          <button class="button button--light cost__button">Я готов лететь</button>
         </div>
       </section>
 
-      <section class="idea">
-        <div class="idea__wrapper">
-          <h2 class="idea__header">От идеи до реализации</h2>
-
-          <h3 class="idea__subheader">Илон Маск. Гений или безумец?</h3>
-
-          <img class="idea__photo" src="img/elon-musk-photo-tablet.jpg" alt="Фото Илона Маска">
-
-          <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
-
-          <blockquote class="idea__quote">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</blockquote>
-
-          <p>— заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
-
-          <p>Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
-
-          <section class="cost">
-            <img class="cost__photo" src="img/rocket.jpg" alt="фото ракеты">
-            <h3 class="cost__header">Стоимость перелёта</h3>
-
-            <p>Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000</b> долларов на человека.</p>
-
-            <p><span class="cost__price">$500 k</span><span class="cost__price-caption"> и ты на Марсе</span></p>
-            <button class="button button--light">Я готов лететь</button>
-          </section>
-        </div>
-      </section>
-
-
+      </div>
 
       <section class="underwater-rocks">
 
         <div class="underwater-rocks__wrapper">
           <h2 class="underwater-rocks__header">Подводные камни<br> в масштабах космоса</h2>
-          <img class="underwater-rocks__video" src="img/underwater-rocks-video-mobile.png" alt="Видео расположения города на Марсе">
-          <button class="underwater-rocks__play-btn" type="button"><span class="visually-hidden">Смотреть видео</span></button>
+
+
+          <figure class="underwater-rocks__video">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="img/underwater-rocks-video-desktop.png">
+              <source media="(min-width: 750px)" srcset="img/underwater-rocks-video-tablet.png">
+              <img class="underwater-rocks__image" src="img/underwater-rocks-video-mobile.png" alt="Видео расположения города на Марсе">
+            </picture>
+            <button class="underwater-rocks__play-btn" type="button">
+              <svg width="52" height="52">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+              <span class="visually-hidden">Смотреть видео</span>
+            </button>
+          </figure>
 
           <div class="underwater-rocks__info rocks-tabs">
             <section id="section1">
@@ -232,7 +266,10 @@
 
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo logo--white" href="#">
-          <span class="logo__project-name">Pantheon</span> project
+          <img class="logo__image" src="img/logo-small.svg" width="32" height="32" alt="Лого проекта Пантеон">
+          <p class="logo__caption">
+            <span class="logo__project-name">Pantheon</span> project
+          </p>
         </a>
 
         <p class="page-footer__info">
@@ -246,24 +283,33 @@
             <li class="social-links__item">
               <a href="#">
                 <!-- svg -->
+                <svg width="35" height="35">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="social-links__item">
               <a href="#">
-                <!-- svg -->
+                <svg width="35" height="35">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li class="social-links__item">
               <a href="#">
-                <!-- svg -->
+                <svg width="35" height="35">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="social-links__item">
               <a href="#">
-                <!-- svg -->
+                <svg width="35" height="35">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
