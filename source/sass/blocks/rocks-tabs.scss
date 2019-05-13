@@ -1,12 +1,36 @@
-.rocks-tabs__tab-name {
-  font-family: $font-secondary;
-  font-weight: normal;
-  color: #908bb1
+.rocks-tabs {
+  position: relative;
 }
 
-.rocks-tabs__tab-name--active {
+.rocks-tabs__header {
+  margin: 0;
+}
+
+// .rocks-tabs input[name="rocks-sections"] {
+//
+// }
+
+.rocks-tabs input[name="rocks-sections"]:checked ~ label {
   font-weight: bold;
   color: #ffffff;
+}
+
+.rocks-tabs input[name="rocks-sections"]:checked ~ article {
+  display: block;
+}
+
+.rocks-tabs__tab-name {
+  position: relative;
+  display: block;
+
+  font-family: $font-secondary;
+  font-weight: normal;
+  color: #908bb1;
+  cursor: pointer;
+}
+
+.rocks-tabs__content {
+  display: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -25,12 +49,43 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .rocks-tabs input[name="rocks-sections"]:checked + .rocks-tabs__tab-name::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 15px;
+    height: 8px;
+
+    background-image: url(../img/icon-arrow-up.svg);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .rocks-tabs__header {
     font-size: 24px;
     font-weight: bold;
+
+  }
+
+  .rocks-tabs__tab-name {
+    position: relative;
+
+
+    width: 263px;
+    padding-right: 68px;
+  }
+
+
+
+  .rocks-tabs__content {
+    position: absolute;
+    top: 0;
+    left: 278px;
+
 
   }
 }
