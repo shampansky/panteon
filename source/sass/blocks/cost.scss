@@ -35,9 +35,11 @@
   margin-bottom: 38px;
 }
 
+.cost__order {
+  margin-bottom: 48px;
+}
 .cost__price-wrapper {
   margin: 0;
-  margin-bottom: 48px;
 }
 
 .cost__price {
@@ -60,7 +62,105 @@
 }
 
 @media (min-width: $tablet-width) {
+  .cost {
+    padding-top: 46px;
+    margin-bottom: 86px;
+  }
+
+  .cost__wrapper {
+    width: 720px;
+    padding: 0 32px 55px;
+
+    background-image: url(../img/idea-bg-tablet.jpg);
+  }
+
   .cost__photo {
     float: left;
+    margin-top: -46px;
+    margin-left: 18px;
+    margin-right: 80px;
   }
+
+  .cost__header {
+    padding-top: 48px;
+  }
+
+  .cost__info {
+    margin-bottom: 50px;
+  }
+
+  .cost__order {
+    clear: both;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .cost__price {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+
+  .cost__price-caption {
+    width: 220px;
+    margin-top: 2px;
+    padding-bottom: 5px;
+  }
+
+  .cost__button {
+    width: 210px;
+  }
+
+  .cost__price-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cost {
+    padding-top: 29px;
+  }
+
+  .cost__wrapper {
+    width: 1140px;
+    padding-left: 27px;
+
+    background-image: url(../img/idea-bg-desktop.jpg);
+  }
+
+  .cost__header {
+    padding-top: 57px;
+  }
+
+  .cost__info {
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  .cost__photo {
+    margin-top: -29px;
+    margin-left: 0;
+    margin-right: 62px;
+  }
+
+  .cost__order {
+    clear: none;
+    align-items: flex-end;
+    margin-right: 30px;
+  }
+
+  .cost__price-wrapper {
+    align-items: flex-start;
+  }
+
+  .cost__price {
+    margin-right: 38px;
+  }
+
+  .cost__price-caption {
+    margin-top: 11px;
+  }
+
 }

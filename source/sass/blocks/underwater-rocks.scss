@@ -52,11 +52,14 @@
 @media (min-width: $tablet-width) {
   .underwater-rocks__wrapper {
     width: $tablet-width;
+    padding-top: 68px;
+
+    background-image: url(../img/underwater-rocks-bg-tablet.jpg);
   }
 
   .underwater-rocks__header {
     font-size: 48px;
-    line-height: 54px;
+    line-height: 57px;
   }
 
   .underwater-rocks__header br {

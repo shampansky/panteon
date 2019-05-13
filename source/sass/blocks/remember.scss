@@ -53,11 +53,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .remember {
+    padding-top: 47px;
+    padding-bottom: 196px;
+
+    background-image: url(../img/remember-all-bg-tablet@1x.png);
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .remember {
+    background-image: url(../img/remember-all-bg-tablet@2x.png);
+    background-size: 1170px auto;
+    }
+  }
+
   .remember__wrapper {
     width: $tablet-width;
   }
 
   .remember__header {
+    margin-bottom: 45px;
+
     font-size: 48px;
     line-height: 54px;
   }
@@ -77,12 +93,38 @@
 }
 
 @media (min-width: $desktop-width) {
+  .remember {
+    padding-top: 77px;
+    padding-bottom: 143px;
+
+    background-image: url(../img/remember-all-bg-desktop@1x.png);
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .remember {
+    background-image: url(../img/remember-all-bg-desktop@2x.png);
+    background-size: 1920px auto;
+    }
+  }
+
   .remember__wrapper {
     width: $desktop-width;
   }
 
   .remember__header {
+    margin-bottom: 41px;
+
     font-size: 60px;
     line-height: 68px;
+  }
+
+  .remember__info {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .remember__info-wrapper {
+    width: 488px;
+    margin-right: 38px;
   }
 }

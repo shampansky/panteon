@@ -22,10 +22,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social-links {
+    width: 312px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .social-links__text {
     display: block;
+    margin: 0;
 
     font-size: 14px;
     font-weight: normal;
+  }
+
+  .social-links__list {
+    margin-bottom: 0;
+  }
+
+  .social-links__item:last-child {
+    margin-right: 0;
   }
 }

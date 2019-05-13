@@ -76,6 +76,15 @@
     width: $tablet-width;
   }
 
+  .facts__list {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .facts__item {
+    width: 210px;
+  }
+
   .facts__highlight {
     font-size: 48px;
     line-height: 48px;

@@ -47,6 +47,11 @@
 
 @media (min-width: $tablet-width) {
   .video-location__play-btn {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     font-size: 16px;
     line-height: 16px;
     font-weight: 600;
@@ -55,5 +60,30 @@
 
   .video-location__play-btn span {
     display: inline;
+  }
+
+  .video-location__caption {
+    bottom: -28px;
+    right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-location__caption {
+    top: 110px;
+    right: -180px;
+  }
+
+  .video-location__caption::before {
+    content: "";
+
+    position: absolute;
+    left: -144px;
+    top: 33px;
+
+    width: 118px;
+    height: 1px;
+
+    background-color: #ff9ebd;
   }
 }

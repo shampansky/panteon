@@ -19,10 +19,11 @@
             <p class="logo__caption"><span class="logo__project-name">Pantheon</span> project</p>
           </a>
           <button class="page-header__toggle" type="button">
+            <span>Меню</span>
             <svg width="47" height="18">
               <use xlink:href="#icon-menu"></use>
             </svg>
-            <span>Меню</span>
+
           </button>
           <nav class="page-header__nav main-nav">
             <ul class="main-nav__list">
@@ -135,13 +136,23 @@
 
       <section class="cost">
         <div class="cost__wrapper">
-          <img class="cost__photo" src="img/rocket.jpg" alt="фото ракеты">
+          <picture >
+            <source media="(min-width: 1170px)" srcset="img/rocket-desktop.jpg">
+            <source media="(min-width: 750px)" srcset="img/rocket-tablet.jpg">
+            <img class="cost__photo" src="img/rocket.jpg" alt="фото ракеты">
+          </picture>
+
           <h3 class="cost__header">Стоимость перелёта</h3>
 
           <p class="cost__info">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.</p>
 
-          <p class="cost__price-wrapper"><span class="cost__price">$500 k</span><span class="cost__price-caption"> и ты на Марсе</span></p>
-          <button class="button button--light cost__button">Я готов лететь</button>
+          <div class="cost__order">
+            <p class="cost__price-wrapper">
+              <span class="cost__price">$500 k</span>
+              <span class="cost__price-caption"> и ты на Марсе</span>
+            </p>
+            <button class="button button--light cost__button">Я готов лететь</button>
+          </div>
         </div>
       </section>
 
@@ -238,82 +249,84 @@
     </main>
 
     <footer class="page-footer">
-      <section class="departure">
-        <div class="departure__wrapper">
-          <h2 class="departure__header">Деньги приготовил. Когда вылетаем?</h2>
-          <aside class="departure__newsletter newsletter">
-            <h3 class="newsletter__header">Будь в курсе новостей</h3>
-            <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="newsletter__input">
-                <label class="visually-hidden" for="nl-name">Имя</label>
-                <input class="newsletter__text-field" id="nl-name" type="text" name="name" placeholder="Имя">
-              </p>
-              <p class="newsletter__input">
-                <label class="visually-hidden" for="nl-email">E-mail</label>
-                <input class="newsletter__text-field" id="nl-email" type="text" name="email" placeholder="E-mail">
-              </p>
-              <input class="button button--light" type="submit" value="Подписаться">
-            </form>
-          </aside>
-          <div class="departure__description">
-            <p>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
-            <p>Для всех желающих открыты курсы подготовки.</p>
-            <p>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
-            <p><a class="departure__link" href="#">Критерии отбора</a></p>
-          </div>
-        </div>
-      </section>
-
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo logo--white" href="#">
-          <img class="logo__image" src="img/logo-small.svg" width="32" height="32" alt="Лого проекта Пантеон">
-          <p class="logo__caption">
-            <span class="logo__project-name">Pantheon</span> project
+        <section class="departure">
+          <div class="departure__wrapper">
+            <h2 class="departure__header">Деньги приготовил. Когда вылетаем?</h2>
+            <aside class="departure__newsletter newsletter">
+              <h3 class="newsletter__header">Будь в курсе новостей</h3>
+              <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="newsletter__input">
+                  <label class="visually-hidden" for="nl-name">Имя</label>
+                  <input class="newsletter__text-field" id="nl-name" type="text" name="name" placeholder="Имя">
+                </p>
+                <p class="newsletter__input">
+                  <label class="visually-hidden" for="nl-email">E-mail</label>
+                  <input class="newsletter__text-field" id="nl-email" type="text" name="email" placeholder="E-mail">
+                </p>
+                <input class="button button--light" type="submit" value="Подписаться">
+              </form>
+            </aside>
+            <div class="departure__description">
+              <p>Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+              <p>Для всех желающих открыты курсы подготовки.</p>
+              <p>За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
+              <p><a class="departure__link" href="#">Критерии отбора</a></p>
+            </div>
+          </div>
+        </section>
+
+        <div class="page-footer__links-wrapper">
+          <a class="page-footer__logo logo logo--white" href="#">
+            <img class="logo__image" src="img/logo-small.svg" width="32" height="32" alt="Лого проекта Пантеон">
+            <p class="logo__caption">
+              <span class="logo__project-name">Pantheon</span> project
+            </p>
+          </a>
+
+          <p class="page-footer__info">
+
+            <a class="page-footer__info-link" href="#">Подробнее о проекте</a>
           </p>
-        </a>
 
-        <p class="page-footer__info">
-
-          <a class="page-footer__info-link" href="#">Подробнее о проекте</a>
-        </p>
-
-        <div class="page-footer__social-links social-links">
-          <p class="social-links__text">Следуйте за нами</p>
-          <ul class="social-links__list">
-            <li class="social-links__item">
-              <a href="#">
-                <!-- svg -->
-                <svg width="35" height="35">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a href="#">
-                <svg width="35" height="35">
-                  <use xlink:href="#icon-twitter"></use>
-                </svg>
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a href="#">
-                <svg width="35" height="35">
-                  <use xlink:href="#icon-facebook"></use>
-                </svg>
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a href="#">
-                <svg width="35" height="35">
-                  <use xlink:href="#icon-youtube"></use>
-                </svg>
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
+          <div class="page-footer__social-links social-links">
+            <p class="social-links__text">Следуйте за нами</p>
+            <ul class="social-links__list">
+              <li class="social-links__item">
+                <a href="#">
+                  <!-- svg -->
+                  <svg width="35" height="35">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
