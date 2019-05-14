@@ -18,6 +18,8 @@
 .rocks-tabs__tab-name {
   position: relative;
   display: block;
+  margin-bottom: 40px;
+  padding-right: 30px;
 
   font-family: $font-secondary;
   font-weight: normal;
@@ -25,10 +27,16 @@
   cursor: pointer;
 }
 
+.rocks-tabs input[name="rocks-sections"]:checked + .rocks-tabs__tab-name {
+  margin-bottom: 33px;
+}
+
 .rocks-tabs__tab-name svg {
   position: absolute;
   top: 50%;
   right: 0;
+
+  margin-bottom: 33px;
 
   fill: #ffffff;
   opacity: 0.4;
@@ -37,7 +45,15 @@
 
 .rocks-tabs__content {
   display: none;
+  margin-bottom: 50px;
 }
+
+.rocks-tabs__content p {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+
 
 @media (max-width: $tablet-width) {
     .rocks-tabs__header {
@@ -59,17 +75,18 @@
   input[name="rocks-sections"]:checked ~ .rocks-tabs__tab-name svg {
       transform: translateY(-50%) rotate(270deg);
       opacity: 1;
-      right: 3px;
+      right: 5px;
   }
 
 }
 
 @media (min-width: $tablet-width) {
   .rocks-tabs {
-    min-height: 420px;
+    min-height: 409px;
   }
-  
+
   .rocks-tabs__header {
+    margin-bottom: 30px;
     font-size: 24px;
     font-weight: bold;
   }
@@ -77,14 +94,19 @@
   .rocks-tabs__tab-name {
     position: relative;
 
-    width: 263px;
-    padding-right: 60px;
+    width: 220px;
+    padding-right: 20px;
+    margin-bottom: 40px;
   }
+
+  .rocks-tabs input[name=rocks-sections]:checked+.rocks-tabs__tab-name {
+    margin-bottom: 55px;
+}
 
   .rocks-tabs__content {
     position: absolute;
-    top: 0;
-    left: 278px;
+    top: 4px;
+    left: 288px;
   }
 
   input[name="rocks-sections"]:checked ~ .rocks-tabs__tab-name svg {

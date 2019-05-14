@@ -7,7 +7,7 @@
 .cost__wrapper {
   width: $mobile-width;
   padding: $content-padding;
-  padding-bottom: 54px;
+  padding-bottom: 52px;
   margin: 0 auto;
 
   background-color: #a62f75;
@@ -36,10 +36,11 @@
 }
 
 .cost__order {
-  margin-bottom: 48px;
+  // margin-bottom: 48px;
 }
 .cost__price-wrapper {
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .cost__price {
@@ -109,12 +110,13 @@
   }
 
   .cost__button {
-    width: 210px;
+    width: 214px;
   }
 
   .cost__price-wrapper {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -153,6 +155,7 @@
 
   .cost__price-wrapper {
     align-items: flex-start;
+
   }
 
   .cost__price {

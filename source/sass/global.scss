@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+sup {
+  font-size: 16px;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -41,21 +45,23 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  padding: 16px 40px;
+  padding: 12px 38px;
 
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #e12457;
+  text-decoration: none;
 
+  background-color: #e12457;
   border: none;
   border-radius: 999px;
 }
 
 .button--light {
   width: 100%;
-  
+  padding: 16px 38px;
+
   font-size: 18px;
   color: #c2529a;
 

@@ -1,16 +1,77 @@
-.life__tab-name {
-  display: block;
+.life-tabs {
+  padding-left: 28px;
+  padding-bottom: 10px;
+}
+
+
+
+.life-tabs__tab-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+  margin-left: 7px;
+
+  // font-size: 20px;
+  font-size: 0;
+  line-height: 24px;
+  font-weight: bold;
+  color: #e12457;
 
   cursor: pointer;
 }
 
+.life-tabs input:checked + .life-tabs__tab-name {
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+
+.life-tabs__tab-name span {
+  margin-left: 16px;
+}
+
+.life-tabs__tab-name svg {
+  fill: #e12457;
+}
+
+.life-tabs__image {
+  margin-bottom: 22px;
+}
+
+.life-tabs__header {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
 .life-tabs__content {
   display: none;
+  margin-bottom: 40px;
+}
+
+.life-tabs__description {
+  margin-bottom: 32px;
+}
+
+.life-tabs__description p {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .life-tabs #life-tab1:checked ~ #life-article1,
-.life-tabs #life-tab2:checked ~ #life-article2 {
+.life-tabs #life-tab2:checked ~ #life-article2,
+.life-tabs #life-tab3:checked ~ #life-article3,
+.life-tabs #life-tab4:checked ~ #life-article4,
+.life-tabs #life-tab5:checked ~ #life-article5, {
   display: block;
+}
+
+.life-tabs__button {
+  display: inline-block;
 }
 
 
@@ -18,14 +79,32 @@
   .life-tabs {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
   }
 
-  .life__tab-name {
+  .life-tabs__tab-name {
+    margin-bottom: 0;;
     order: 1;
+    flex-grow: 1;
+    justify-content: center;
   }
+
+  .life-tabs input:checked + .life-tabs__tab-name {
+    width: 220px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
+
 
   .life-tabs__content {
     order: 99;
+    margin-top: 37px;
+  }
+
+  .life-tabs__image {
+    margin-bottom: 25px;
   }
 }
 
@@ -37,7 +116,7 @@
     min-height: 500px;
   }
 
-  .life__tab-name {
+  .life-tabs__tab-name {
     width: 300px;
   }
 
