@@ -1,0 +1,49 @@
+.life__tab-name {
+  display: block;
+
+  cursor: pointer;
+}
+
+.life-tabs__content {
+  display: none;
+}
+
+.life-tabs #life-tab1:checked ~ #life-article1,
+.life-tabs #life-tab2:checked ~ #life-article2 {
+  display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+  .life-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .life__tab-name {
+    order: 1;
+  }
+
+  .life-tabs__content {
+    order: 99;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .life-tabs {
+    position: relative;
+
+    display: block;
+    min-height: 500px;
+  }
+
+  .life__tab-name {
+    width: 300px;
+  }
+
+  .life-tabs__content {
+    position: absolute;
+    left: 350px;
+    top: 0;
+  }
+}

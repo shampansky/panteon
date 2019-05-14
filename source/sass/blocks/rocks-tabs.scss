@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-// .rocks-tabs input[name="rocks-sections"] {
-//
-// }
-
 .rocks-tabs input[name="rocks-sections"]:checked ~ label {
   font-weight: bold;
   color: #ffffff;
@@ -29,12 +25,22 @@
   cursor: pointer;
 }
 
+.rocks-tabs__tab-name svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  fill: #ffffff;
+  opacity: 0.4;
+  transform: translateY(-50%);
+}
+
 .rocks-tabs__content {
   display: none;
 }
 
 @media (max-width: $tablet-width) {
-  .rocks-tabs__header {
+    .rocks-tabs__header {
     position: absolute;
 
     width: 1px;
@@ -50,42 +56,38 @@
     overflow: hidden;
   }
 
-  .rocks-tabs input[name="rocks-sections"]:checked + .rocks-tabs__tab-name::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 15px;
-    height: 8px;
-
-    background-image: url(../img/icon-arrow-up.svg);
+  input[name="rocks-sections"]:checked ~ .rocks-tabs__tab-name svg {
+      transform: translateY(-50%) rotate(270deg);
+      opacity: 1;
+      right: 3px;
   }
+
 }
 
 @media (min-width: $tablet-width) {
+  .rocks-tabs {
+    min-height: 420px;
+  }
+  
   .rocks-tabs__header {
     font-size: 24px;
     font-weight: bold;
-
   }
 
   .rocks-tabs__tab-name {
     position: relative;
 
-
     width: 263px;
-    padding-right: 68px;
+    padding-right: 60px;
   }
-
-
 
   .rocks-tabs__content {
     position: absolute;
     top: 0;
     left: 278px;
+  }
 
-
+  input[name="rocks-sections"]:checked ~ .rocks-tabs__tab-name svg {
+      filter: drop-shadow(5px 0px 0px rgba(255, 255, 255, 0.5)) drop-shadow(10px 0px 0px rgba(255, 255, 255, 0.2));
   }
 }
