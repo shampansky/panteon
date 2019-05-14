@@ -39,20 +39,20 @@
           <span>Пункт назначения:</span> <span>Пантеон,</span> <span>Марс</span>
         </h1>
 
-        <figure class="video-location">
+        <div class="video-location">
           <picture>
             <source media="(min-width: 1170px)" srcset="img/video-desktop.png">
             <source media="(min-width: 750px)" srcset="img/video-tablet.png">
             <img class="video-location__image" src="img/video-mobile.png" alt="Видео расположения города на Марсе">
           </picture>
-          <figcaption class="video-location__caption">Первый город<br> на планете Марс недалеко от горы Олимп</figcaption>
+          <p class="video-location__caption">Первый город<br> на планете Марс недалеко от горы Олимп</p>
           <button class="video-location__play-btn" type="button">
             <svg width="52" height="52">
               <use xlink:href="#icon-play"></use>
             </svg>
             <span>Смотреть видео</span>
           </button>
-        </figure>
+        </div>
       </div>
     </header>
 
@@ -60,7 +60,7 @@
 
       <section class="facts">
         <div class="facts__wrapper">
-          <h2 class="facts__header visually-hidden"></h2>
+          <h2 class="facts__header visually-hidden">Факты о планете Марс</h2>
           <ul class="facts__list">
             <li class="facts__item">
               <span class="facts__highlight">4</span> четвёртая планета по удалённости от Солнца
@@ -92,19 +92,14 @@
             <div class="remember__info">
               <div class="remember__info-wrapper">
                 <h3 class="remember__subheader">Что такое Марс?</h3>
-
                   <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
                   <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
-
               </div>
-
               <div class="remember__info-wrapper">
                 <h3 class="remember__subheader">Где это? Как туда доехать?</h3>
-
-                  <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
-
+                  <p>Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
               </div>
-            </dl>
+            </div>
           </div>
         </section>
 
@@ -164,7 +159,7 @@
           <h2 class="underwater-rocks__header">Подводные камни<br> в масштабах космоса</h2>
 
 
-          <figure class="underwater-rocks__video">
+          <div class="underwater-rocks__video">
             <picture>
               <source media="(min-width: 1170px)" srcset="img/underwater-rocks-video-desktop.png">
               <source media="(min-width: 750px)" srcset="img/underwater-rocks-video-tablet.png">
@@ -176,17 +171,21 @@
               </svg>
               <span class="visually-hidden">Смотреть видео</span>
             </button>
-          </figure>
+          </div>
 
           <div class="underwater-rocks__info rocks-tabs">
             <section id="section1">
               <input class="visually-hidden" type="radio" name="rocks-sections" id="option1" checked>
-              <label class="rocks-tabs__tab-name" for="option1">Жить или выживать?</label>
+              <label class="rocks-tabs__tab-name" for="option1">Жить или выживать?
+                <svg width="47" height="18">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
+              </label>
               <article class="rocks-tabs__content">
                 <h3 class="rocks-tabs__header">Жить или выживать?</h3>
                 <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
                 <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев. </p>
-                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
               </article>
             </section>
 
