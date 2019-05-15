@@ -35,6 +35,8 @@
 @media (min-width: $desktop-width) {
   .life__wrapper {
     width: $desktop-width;
+    padding-top: 100px;
+    margin-bottom: 30px;
   }
 
   .life__header {

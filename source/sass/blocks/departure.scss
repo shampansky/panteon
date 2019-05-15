@@ -55,7 +55,7 @@
 
   .departure__newsletter {
     order: 0;
-    margin-left: 16px;
+    margin-left: 15px;
   }
 
   .departure__description {
@@ -67,10 +67,23 @@
 @media (min-width: $desktop-width) {
   .departure__wrapper {
     width: $desktop-width;
+    justify-content: flex-start;
   }
 
   .departure__header {
+    width: 100%;
+    padding-top: 110px;
+    margin-bottom: 65px;
+
     font-size: 60px;
     line-height: 68px;
   }
+
+  .departure__description {
+    width: 682px;
+    margin-left: 68px;
+    margin-top: 0;
+    padding: 0;
+  }
+
 }

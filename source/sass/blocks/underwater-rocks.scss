@@ -89,10 +89,24 @@
 @media (min-width: $desktop-width) {
   .underwater-rocks__wrapper {
     width: $desktop-width;
+    padding-top: 98px;
+
+    background-image: url(../img/underwater-rocks-bg-desktop.jpg);
   }
 
   .underwater-rocks__header {
-    font-size: 60px;
+    margin-bottom: 56px;
+
+    font-size: 58px;
     line-height: 68px;
+  }
+
+  .underwater-rocks__header br {
+    display: none;
+  }
+
+  .underwater-rocks__video {
+
+    margin-bottom: 62px;
   }
 }

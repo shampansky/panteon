@@ -80,5 +80,14 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: $desktop-width;
+
+    background-image: url(../img/underwater-rocks-bg-desktop.jpg);
+  }
+
+  .page-footer__links-wrapper {
+
+    width: $desktop-width;
+    padding-top: 116px;
+
   }
 }

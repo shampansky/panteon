@@ -1,14 +1,20 @@
 .life-tabs {
+  position: relative;
+
   padding-left: 28px;
   padding-bottom: 10px;
 }
 
 
 
+
+
 .life-tabs__tab-name {
+  position: relative;
+
   display: flex;
   align-items: center;
-  margin-bottom: 31px;
+  padding-bottom: 31px;
   margin-left: 7px;
 
   // font-size: 20px;
@@ -20,10 +26,45 @@
   cursor: pointer;
 }
 
+.life-tabs__tab-name::before {
+  content: '';
+
+  position: absolute;
+  left: -26px;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background-color: #e12457;
+}
+
 .life-tabs input:checked + .life-tabs__tab-name {
   font-size: 20px;
-  margin-bottom: 25px;
-  margin-left: 0;
+  padding-bottom: 25px;
+}
+
+.life-tabs__tab-name::after {
+  content: '';
+
+  position: absolute;
+  left: -32px;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  border: 3px solid #e12457;
+  background-color: #ffffff;
+}
+
+.life-tabs input:checked + .life-tabs__tab-name::after {
+  background-color: #e12457;
+}
+
+.life-tabs__tab-name:last-of-type::before {
+  display: none;
 }
 
 .life-tabs__tab-name span {
@@ -49,8 +90,26 @@
 }
 
 .life-tabs__content {
+  position: relative;
   display: none;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.life-tabs__content::after {
+  content: '';
+
+  position: absolute;
+  left: -19px;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background-color: #e12457;
+}
+
+.life-tabs__content:last-of-type::after {
+  display: none;
 }
 
 .life-tabs__description {
@@ -79,28 +138,52 @@
   .life-tabs {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     padding-left: 0;
   }
 
   .life-tabs__tab-name {
-    margin-bottom: 0;;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 7px;
+    padding-bottom: 0;
     order: 1;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .life-tabs__tab-name::before {
+    content: '';
+
+    position: absolute;
+    left: 21px;
+    top: -18px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #e12457;
+  }
+
+  .life-tabs__tab-name::after {
+    left: 12px;
+    top: -24px;
   }
 
   .life-tabs input:checked + .life-tabs__tab-name {
     width: 220px;
     margin-bottom: 0;
+    padding-bottom: 0;
     justify-content: flex-start;
   }
-
-
 
   .life-tabs__content {
     order: 99;
     margin-top: 37px;
+  }
+
+  .life-tabs__content::after {
+    display: none;
   }
 
   .life-tabs__image {
@@ -109,20 +192,5 @@
 }
 
 @media (min-width: $desktop-width) {
-  .life-tabs {
-    position: relative;
 
-    display: block;
-    min-height: 500px;
-  }
-
-  .life-tabs__tab-name {
-    width: 300px;
-  }
-
-  .life-tabs__content {
-    position: absolute;
-    left: 350px;
-    top: 0;
-  }
 }
