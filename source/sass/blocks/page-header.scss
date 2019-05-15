@@ -75,8 +75,16 @@
   background-color: transparent;
 }
 
+.page-header__toggle:hover {
+  cursor: pointer;
+}
+
 .page-header__toggle svg {
   fill: #ffffff;
+}
+
+.page-header__toggle:hover svg {
+  fill: #e12457;
 }
 
 .page-header__toggle span {

@@ -37,9 +37,20 @@
   transform: translate(-50%,-50%);
 }
 
+.video-location__play-btn:hover {
+  color: #e12457;
+  cursor: pointer;
+}
+
+.video-location__play-btn:hover svg{
+  filter: drop-shadow(0px 0px 5px rgba(225, 36, 87, 0.6));
+}
+
 .video-location__play-btn span {
   display: none;
 }
+
+
 
 .video-location__play-btn svg {
   fill: #ffffff;

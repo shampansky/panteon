@@ -47,6 +47,16 @@
   transform: translate(-50%,-50%);
 }
 
+.underwater-rocks__play-btn:hover {
+  cursor: pointer;
+}
+
+.underwater-rocks__play-btn:hover svg {
+  filter: drop-shadow(0px 0px 5px rgba(225, 36, 87, 0.6));
+}
+
+
+
 .underwater-rocks__header br {
   display: none;
 }
