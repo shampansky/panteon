@@ -1,5 +1,7 @@
 .underwater-rocks {
   color: #ffffff;
+
+
 }
 
 .underwater-rocks__wrapper {
@@ -13,6 +15,7 @@
   background-image: url(../img/underwater-rocks-bg-mobile.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+
 }
 
 .underwater-rocks__header {
@@ -87,11 +90,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .underwater-rocks {
+    color: #ffffff;
+
+    background-color: #0f102e;
+    background-image: url(../img/underwater-rocks-bg-desktop.jpg), linear-gradient(to bottom, #0f102e, #161c3d);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .underwater-rocks__wrapper {
     width: $desktop-width;
     padding-top: 98px;
 
-    background-image: url(../img/underwater-rocks-bg-desktop.jpg);
+    background-color: transparent;
+    background-image: none;
   }
 
   .underwater-rocks__header {

@@ -78,10 +78,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: #76258f;
+    background-image: url(../img/footer-bg-desktop.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .page-footer__wrapper {
     width: $desktop-width;
 
-    background-image: url(../img/underwater-rocks-bg-desktop.jpg);
+    background-image: none;
+    background-color: transparent;
   }
 
   .page-footer__links-wrapper {
