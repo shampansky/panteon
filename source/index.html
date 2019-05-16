@@ -10,7 +10,7 @@
     <div style="display:none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-      <header class="page-header">
+      <header class="page-header page-header--closed page-header--no-js">
       <div class="page-header__wrapper">
         <div class="page-header__top-bar">
           <a class="page-header__logo logo" href="#">
@@ -18,7 +18,7 @@
 
             <p class="logo__caption"><span class="logo__project-name">Pantheon</span> project</p>
           </a>
-          <button class="page-header__toggle" type="button">
+          <button class="page-header__nav-open" type="button">
             <span>Меню</span>
             <svg width="47" height="18">
               <use xlink:href="#icon-menu"></use>
@@ -26,6 +26,12 @@
 
           </button>
           <nav class="page-header__nav main-nav">
+            <button class="main-nav__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+              <svg width="20" height="20">
+                <use xlink:href="#icon-menu-close"></use>
+              </svg>
+            </button>
             <ul class="main-nav__list">
               <li><a href="#">Главная</a></li>
               <li><a href="#">Организация жизни</a></li>
@@ -451,6 +457,34 @@
 
       </div>
     </footer>
+
+    <script>
+      var pageHeader = document.querySelector('.page-header');
+      var navOpen = document.querySelector('.page-header__nav-open');
+      var navClose = document.querySelector('.main-nav__close');
+
+
+      pageHeader.classList.remove('page-header--no-js');
+
+      navOpen.addEventListener('click', function() {
+        if (pageHeader.classList.contains('page-header--opened')) {
+          pageHeader.classList.remove('page-header--opened');
+          pageHeader.classList.add('page-header--closed');
+        } else {
+          pageHeader.classList.add('page-header--opened');
+          pageHeader.classList.remove('page-header--closed');
+        }
+      });
+
+      navClose.addEventListener('click', function() {
+        pageHeader.classList.remove('page-header--opened');
+        pageHeader.classList.add('page-header--closed');
+      });
+
+
+
+
+    </script>
 
   </body>
 </html>
